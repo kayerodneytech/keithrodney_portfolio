@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import LinkButtonPrimary from "./Buttons/buttonPrimary";
+import LinkButtonSecondary from "./Buttons/buttonSecondary";
 
 const HeroSection = () => {
   return (
@@ -22,25 +24,16 @@ const HeroSection = () => {
                 impactful digital experiences.
               </p>
               <div className="flex flex-wrap gap-4">
-                <a
-                  href="creative.php"
-                  className="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg hover:opacity-90 transition flex items-center"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
-                  <i className="fas fa-paint-brush mr-2"></i> View Creative Work
-                </a>
-                <a
-                  href="technical.php"
-                  className="px-6 py-3 bg-dark-800 border border-dark-700 text-white rounded-lg hover:bg-dark-700 transition flex items-center"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                >
-                  <i className="fas fa-code mr-2"></i> Technical Skills
-                </a>
+                <LinkButtonPrimary path="#" text="View Creative Work">
+                  <i className="fas fa-paint-brush mr-2"></i>
+                </LinkButtonPrimary>
+
+                <LinkButtonSecondary
+                  path="#technical"
+                  text="View Technical Skills"
+                />
               </div>
             </div>
-
             <div
               className="relative hidden lg:block"
               data-aos="fade-left"
