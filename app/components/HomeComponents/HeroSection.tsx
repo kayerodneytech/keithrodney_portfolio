@@ -3,11 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaPaintBrush, FaCode, FaTrophy, FaUsers } from "react-icons/fa";
-import {
-  Skeleton,
-  SkeletonText,
-  SkeletonAvatar,
-} from "../components/ui/skeleton";
+import { Skeleton, SkeletonText, SkeletonAvatar } from "../ui/skeleton";
 
 type HeroProps = {
   isLoading?: boolean;

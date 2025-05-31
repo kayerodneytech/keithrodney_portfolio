@@ -2,12 +2,12 @@
 
 import { useState, useEffect } from "react";
 
-import About from "./HomeComponents/AboutSection";
+import About from "./components/HomeComponents/AboutSection";
 
-import CreativeEcosystem from "./HomeComponents/CreativeEcosystem";
-import GraphicDesignSection from "./HomeComponents/GraphicDesignSection";
-import AnimationSection from "./HomeComponents/AnimationSection";
-import HeroSection from "./HomeComponents/HeroSection";
+import CreativeEcosystem from "./components/HomeComponents/CreativeEcosystem";
+import GraphicDesignSection from "./components/HomeComponents/GraphicDesignSection";
+import AnimationSection from "./components/HomeComponents/AnimationSection";
+import HeroSection from "./components/HomeComponents/HeroSection";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);

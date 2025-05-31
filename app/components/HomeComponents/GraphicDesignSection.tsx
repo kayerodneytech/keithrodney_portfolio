@@ -1,7 +1,7 @@
 "use client";
 
 import { FaArrowRight, FaCommentDots, FaImages } from "react-icons/fa";
-import { Skeleton, SkeletonCard } from "../components/ui/skeleton";
+import { Skeleton, SkeletonCard } from "../ui/skeleton";
 
 // Constants
 const BEHANCE_URL = "https://www.behance.net/rti2d";

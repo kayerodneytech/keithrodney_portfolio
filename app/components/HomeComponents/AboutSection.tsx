@@ -1,6 +1,6 @@
 "use client";
 
-import { Skeleton, SkeletonText } from "../components/ui/skeleton";
+import { Skeleton, SkeletonText } from "../ui/skeleton";
 
 type AboutProps = {
   isLoading?: boolean;

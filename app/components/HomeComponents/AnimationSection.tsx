@@ -1,7 +1,7 @@
 "use client";
 
 import { FaFilm } from "react-icons/fa";
-import { Skeleton, SkeletonCard } from "../components/ui/skeleton";
+import { Skeleton, SkeletonCard } from "../ui/skeleton";
 
 // Project data
 
