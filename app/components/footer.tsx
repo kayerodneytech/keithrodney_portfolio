@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <Link href="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 rounded-full bg-gradient-to-r from-primary-500 to-primary-600 flex items-center justify-center">
+              <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#1245f8] to-[#2f2bfe] flex items-center justify-center">
                 <span className="text-white font-bold text-xs">KP</span>
               </div>
               <span className="text-white font-semibold">Keith Rodney</span>
@@ -26,31 +26,31 @@ export default function Footer() {
           <div className="flex flex-wrap justify-center gap-6 mb-6 md:mb-0">
             <Link
               href="/#about"
-              className="text-gray-400 hover:text-white transition-colors"
+              className="text-gray-400 hover:text-[#1245f8] transition-colors"
             >
               About
             </Link>
             <Link
               href="/#creative"
-              className="text-gray-400 hover:text-white transition-colors"
+              className="text-gray-400 hover:text-[#1245f8] transition-colors"
             >
               Creative Work
             </Link>
             <Link
               href="/#technical"
-              className="text-gray-400 hover:text-white transition-colors"
+              className="text-gray-400 hover:text-[#1245f8] transition-colors"
             >
               Technical
             </Link>
             <Link
               href="/#resume"
-              className="text-gray-400 hover:text-white transition-colors"
+              className="text-gray-400 hover:text-[#1245f8] transition-colors"
             >
               Resume
             </Link>
             <Link
               href="/#contact"
-              className="text-gray-400 hover:text-white transition-colors"
+              className="text-gray-400 hover:text-[#1245f8] transition-colors"
             >
               Contact
             </Link>
@@ -61,7 +61,7 @@ export default function Footer() {
               href={socialLinks.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 bg-dark-800 rounded-full flex items-center justify-center hover:bg-primary-500/10 hover:text-primary-400 transition"
+              className="w-10 h-10 bg-[#1245f8] rounded-full flex items-center justify-center hover:bg-[#2f2bfe] hover:text-primary-400 transition"
             >
               <FaLinkedinIn />
             </a>
@@ -69,7 +69,7 @@ export default function Footer() {
               href={socialLinks.behance}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 bg-dark-800 rounded-full flex items-center justify-center hover:bg-primary-500/10 hover:text-primary-400 transition"
+              className="w-10 h-10 bg-[#1245f8] rounded-full flex items-center justify-center hover:bg-[#2f2bfe] hover:text-primary-400 transition"
             >
               <FaBehance />
             </a>
@@ -77,7 +77,7 @@ export default function Footer() {
               href={socialLinks.tiktok}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 bg-dark-800 rounded-full flex items-center justify-center hover:bg-primary-500/10 hover:text-primary-400 transition"
+              className="w-10 h-10 bg-[#1245f8] rounded-full flex items-center justify-center hover:bg-[#2f2bfe] hover:text-primary-400 transition"
             >
               <FaTiktok />
             </a>
@@ -90,7 +90,7 @@ export default function Footer() {
             reserved.
           </p>
           <p className="text-gray-600 text-sm mt-2">
-            Designed and developed By Keith Phiri
+            Website Designed and developed By Keith Rodney.
           </p>
         </div>
       </div>
