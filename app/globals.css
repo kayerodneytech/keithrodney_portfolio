@@ -3,8 +3,8 @@
 :root {
   --background: #0f172a;
   --foreground: #e2e8f0;
-  --primary: #0284c7;
-  --secondary: #8b5cf6;
+  --primary: #1245f8;
+  --secondary: #2f2bfe;
 }
 
 body {
@@ -105,7 +105,7 @@ p,
   left: 0;
   width: 50%;
   height: 3px;
-  background: linear-gradient(90deg, #38bdf8, #8b5cf6);
+  background: linear-gradient(90deg, #1245f8, #2f2bfe);
   border-radius: 3px;
 }
 
@@ -120,7 +120,7 @@ p,
   left: 0;
   width: 0;
   height: 2px;
-  background: #38bdf8;
+  background: #1245f8;
   transition: width 0.3s ease;
 }
 

@@ -65,7 +65,7 @@ export default function Navbar() {
             </Link>
             <Link
               href="/#contact"
-              className="px-4 py-2 bg-gradient-to-r from-primary-600 to-primary-700 text-white rounded-lg hover:opacity-90 transition"
+              className="px-4 py-2 bg-gradient-to-br from-[#1245f8] to-[#2f2bfe] text-white rounded-lg hover:opacity-90 transition"
             >
               Contact
             </Link>
@@ -124,7 +124,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/#contact"
-            className="block px-4 py-2 bg-gradient-to-r from-primary-600 to-primary-700 text-white rounded-lg hover:opacity-90 transition text-center"
+            className="block px-4 py-2 bg-gradient-to-br from-[#1245f8] to-[#2f2bfe] text-white rounded-lg hover:opacity-90 transition text-center"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Contact
