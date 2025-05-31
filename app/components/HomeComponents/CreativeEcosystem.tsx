@@ -119,8 +119,8 @@ const CreativeEcosystem = () => {
                   x2="100%"
                   y2="0%"
                 >
-                  <stop offset="0%" stopColor="#4f46e5" />
-                  <stop offset="100%" stopColor="#9333ea" />
+                  <stop offset="0%" stopColor="#1245f8" />
+                  <stop offset="100%" stopColor="#2f2bf" />
                 </linearGradient>
               </defs>
             </svg>
@@ -137,8 +137,8 @@ const CreativeEcosystem = () => {
               }}
             >
               <span className="text-center font-bold text-white text-sm md:text-base">
-                A User centered, <br />
-                Creative Focused
+                A Growth Centered, <br />
+                Multi-faceted
                 <br />
                 WorkFlow.
               </span>
@@ -179,7 +179,7 @@ const CreativeEcosystem = () => {
             >
               <motion.path
                 d="M250 50 Q 400 250, 250 450"
-                stroke="#4f46e5"
+                stroke="#1245f8"
                 strokeWidth="2"
                 fill="none"
                 markerEnd="url(#arrowhead)"
@@ -187,7 +187,7 @@ const CreativeEcosystem = () => {
               />
               <motion.path
                 d="M450 250 Q 250 400, 50 250"
-                stroke="#4f46e5"
+                stroke="#1245f8"
                 strokeWidth="2"
                 fill="none"
                 markerEnd="url(#arrowhead)"
@@ -195,7 +195,7 @@ const CreativeEcosystem = () => {
               />
               <motion.path
                 d="M250 450 Q 100 250, 250 50"
-                stroke="#4f46e5"
+                stroke="#1245f8"
                 strokeWidth="2"
                 fill="none"
                 markerEnd="url(#arrowhead)"
@@ -203,7 +203,7 @@ const CreativeEcosystem = () => {
               />
               <motion.path
                 d="M50 250 Q 250 100, 450 250"
-                stroke="#4f46e5"
+                stroke="#1245f8"
                 strokeWidth="2"
                 fill="none"
                 markerEnd="url(#arrowhead)"
@@ -218,7 +218,7 @@ const CreativeEcosystem = () => {
                   refY="3.5"
                   orient="auto"
                 >
-                  <polygon points="0 0, 10 3.5, 0 7" fill="#4f46e5" />
+                  <polygon points="0 0, 10 3.5, 0 7" fill="#1245f8" />
                 </marker>
               </defs>
             </svg>
