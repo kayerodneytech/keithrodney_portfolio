@@ -1,0 +1,81 @@
+/* Custom Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0a0a0a;
+    color: #e2e8f0;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Link Underline Effect */
+.nav-link {
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Glass Card Effect */
+.glass-card {
+    background: rgba(26, 26, 26, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Custom Animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes float-reverse {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(15px); }
+}
+
+/* Section Title Styling */
+.section-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 3px;
+    background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+    border-radius: 3px;
+}
+
+/* Smooth Transitions */
+a, button {
+    transition: all 0.3s ease;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+    .hero-content {
+        text-align: center;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+}

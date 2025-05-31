@@ -1,0 +1,6 @@
+# Allow all search engines to index everything
+User-agent: *
+Disallow:
+
+# Sitemap location
+Sitemap: https://keith.rodneytechinc.co.zw/sitemap.xml

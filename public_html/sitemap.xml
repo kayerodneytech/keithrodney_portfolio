@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
+                        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://keith.rodneytechinc.co.zw/</loc>
+    <lastmod>2025-05-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://keith.rodneytechinc.co.zw/#about</loc>
+    <lastmod>2025-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Services -->
+  <url>
+    <loc>https://keith.rodneytechinc.co.zw/#creative</loc>
+    <lastmod>2025-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Portfolio -->
+  <url>
+    <loc>https://keith.rodneytechinc.co.zw/#technical</loc>
+    <lastmod>2025-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://www.rodneytechinc.co.zw/blog</loc>
+    <lastmod>2025-05-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://keith.rodneytechinc.co.zw/#contact</loc>
+    <lastmod>2025-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
+</urlset>

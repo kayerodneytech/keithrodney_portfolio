@@ -14,10 +14,17 @@
     "react-dom": "$react-dom"
   },
   "dependencies": {
+    "@types/aos": "^3.0.7",
+    "aos": "^2.3.4",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.12.2",
+    "mysql2": "^3.14.1",
     "next": "15.3.2",
     "next-auth": "^4.24.11",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "tailwind-merge": "^3.3.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

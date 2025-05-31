@@ -1,16 +1,24 @@
-"use-client";
 import Link from "next/link";
 import React from "react";
 
-const LinkButtonPrimary = (props) => {
+type ButtonPrimaryProps = {
+  path: string;
+  text: string;
+  icon?: React.ReactNode;
+};
+
+const LinkButtonPrimary: React.FC<ButtonPrimaryProps> = ({
+  path,
+  text,
+  icon,
+}) => {
   return (
     <Link
-      href={props.path}
-      className="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg hover:opacity-90 transition flex items-center"
-      data-aos="fade-up"
-      data-aos-delay="200"
+      href={path}
+      className="px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg hover:opacity-90 transition flex items-center justify-center"
     >
-      {props.text}
+      {icon && icon}
+      {text}
     </Link>
   );
 };
