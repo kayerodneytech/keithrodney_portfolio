@@ -86,21 +86,21 @@ const testimonials = [
     delay: 100,
   },
   {
-    name: "Nobukhosi M.",
+    name: "Nonsikelelo M.",
     position: "Managing Director, FABG",
     quote:
-      "Working with Keith was a game-changer for our brand. He didn't just deliver designs - he delivered a complete visual system that works across all our touchpoints. His ability to understand and elevate our vision was remarkable.",
+      "His ability to understand and my vision was remarkable. He didn&apos;t just deliver a logo, he delivered beyond that, presenting the entire concept in a way that convinced me that what he had come up with was exactly what I needed and more. ",
     delay: 200,
   },
   {
-    name: "James L.",
-    position: "Founder, Design Core",
+    name: "Lydia Chagonda",
+    position: "Managing Director, Ethnik Kollections",
     quote:
-      "The logo Keith created for our platform perfectly captures our mission to connect designers. His conceptual approach resulted in a mark that's both meaningful and memorable.",
-    delay: 300,
+      "Keith has been handling our social media and design needs for over 3 years now. I have watched his skill grow over time and it has been a priviledge. He puts himself in your shoes and delivers just what you want and at times goes beyond .",
+    delay: 400,
   },
   {
-    name: "Nadia T.",
+    name: "Mthokozisi S.",
     position: "Product Manager, MunchMate",
     quote:
       "Not many designers think about design the same way he does. he truly goes out of his way do deliver what the client wants and that what I liked the most!",
@@ -279,14 +279,14 @@ const GraphicDesignPortfolio = () => {
           {designProjects.map((project) => (
             <div key={project.id} className="mb-20">
               <div className="mb-10">
-                <h3 className="text-2xl md:text-3xl font-bold mb-2 text-[#007eff]">
+                <h3 className="text-2xl md:text-3xl font-bold mb-2 text-white">
                   {project.title}
                 </h3>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-3 py-1 bg-dark-800 text-sm rounded-full"
+                      className="px-3 py-1 bg-[#1245f8] text-sm rounded-full"
                     >
                       {tag}
                     </span>
@@ -334,8 +334,8 @@ const GraphicDesignPortfolio = () => {
                     className="col-span-4 rounded-2xl overflow-hidden"
                   >
                     <Image
-                      width={1000}
-                      height={1000}
+                      width={800}
+                      height={800}
                       src={image}
                       alt={`Design work for ${project.title}`}
                       className="w-full h-full object-cover"
@@ -350,7 +350,7 @@ const GraphicDesignPortfolio = () => {
 
       {/* Testimonials */}
       <section className="py-20">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+        <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-10">
           <h2
             className="text-3xl font-bold mb-16 text-center"
             data-aos="fade-up"

@@ -23,7 +23,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Keith Phiri | Digital Creative & Developer",
   description:
-    "Welcome to Keith Phiri's portfolio, your go-to destination for digital creative services. Explore our resources, get expert help, and grow today!",
+    "Welcome to Keith Phiri's portfolio, creating a synergy between creativity and technical prowess. Explore our resources, get expert help, and grow today!",
   keywords:
     "web design, animation, graphic design, digital marketing, Zimbabwe, Rodneytech, PixelPyre",
   authors: [{ name: "Rodneytech Inc." }],
@@ -31,14 +31,14 @@ export const metadata: Metadata = {
     type: "website",
     title: "Keith Phiri | Digital Creative & Developer",
     description:
-      "Welcome to Keith Phiri's portfolio, your go-to destination for digital creative services.",
+      "Welcome to Keith Phiri's portfolio, creating a synergy between creativity and technical prowess.",
     images: ["/assets/images/preview.jpg"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Keith Phiri | Digital Creative & Developer",
+    title: "Keith Rodney | Digital Creative & Developer",
     description:
-      "Welcome to Keith Phiri's portfolio, your go-to destination for digital creative services.",
+      "Welcome to Keith Rodney Phiri's portfolio, creating a synergy between creativity and technical prowess.",
     images: ["/assets/images/preview.jpg"],
   },
   icons: {
