@@ -8,7 +8,7 @@ import CreativeEcosystem from "./components/HomeComponents/CreativeEcosystem";
 import GraphicDesignSection from "./components/HomeComponents/GraphicDesignSection";
 import AnimationSection from "./components/HomeComponents/AnimationSection";
 import HeroSection from "./components/HomeComponents/HeroSection";
-
+import CertificationsSection from "./components/CertificationsSection";
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -28,6 +28,7 @@ export default function Home() {
       <CreativeEcosystem />
       <GraphicDesignSection isLoading={isLoading} />
       <AnimationSection isLoading={isLoading} />
+      <CertificationsSection />
     </main>
   );
 }
