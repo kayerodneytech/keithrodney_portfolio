@@ -19,11 +19,9 @@ const config: Config = {
           600: '#3a3a3a',
         },
         primary: {
-          400: '#38bdf8',
-          500: '#0ea5e9',
-          600: '#0284c7',
-          700: '#0369a1',
-          800: '#075985',
+          400: "#1245f8",
+          500: "#2f2bfe",
+          600: "#1a1a1a",
         },
         blue: {
           400: '#60a5fa',
@@ -34,7 +32,7 @@ const config: Config = {
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',
-        'float-reverse': 'float-reverse 6s ease-in-out infinite',
+        'float-reverse': 'float-reverse 8s ease-in-out infinite',
       },
       keyframes: {
         float: {

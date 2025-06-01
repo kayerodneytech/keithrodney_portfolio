@@ -1,29 +1,31 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
-  // Close mobile menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      const mobileMenu = document.getElementById("mobile-menu");
-      const mobileMenuButton = document.getElementById("mobile-menu-button");
-
       if (
-        mobileMenu &&
-        mobileMenuButton &&
-        !mobileMenu.contains(event.target as Node) &&
-        !mobileMenuButton.contains(event.target as Node)
+        mobileMenuRef.current &&
+        buttonRef.current &&
+        !mobileMenuRef.current.contains(event.target as Node) &&
+        !buttonRef.current.contains(event.target as Node)
       ) {
         setIsMobileMenuOpen(false);
       }
     };
 
-    document.addEventListener("click", handleClickOutside);
-    return () => document.removeEventListener("click", handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   return (
     <nav className="bg-dark-800 bg-opacity-90 backdrop-blur-md fixed top-0 left-0 right-0 z-50 shadow-lg border-b border-dark-700">
@@ -73,9 +75,10 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            id="mobile-menu-button"
+            ref={buttonRef}
             className="md:hidden text-gray-400 hover:text-white focus:outline-none"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            onClick={toggleMobileMenu}
+            aria-label="Toggle mobile menu"
           >
             {isMobileMenuOpen ? (
               <FaTimes className="text-xl" />
@@ -88,9 +91,9 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        id="mobile-menu"
+        ref={mobileMenuRef}
         className={`md:hidden bg-dark-800 border-t border-dark-700 transition-all duration-300 ease-in-out ${
-          isMobileMenuOpen ? "max-h-[500px]" : "max-h-0"
+          isMobileMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
         } overflow-hidden`}
       >
         <div className="px-6 py-4 space-y-4">
