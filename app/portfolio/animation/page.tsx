@@ -148,16 +148,15 @@ export default function AnimationPortfolio() {
       });
     };
 
-    const filterButtons = document.querySelectorAll(
-      "#filter-controls .filter-btn"
-    );
+    const filterButtons = document.querySelectorAll(".filter-btn");
 
     filterButtons.forEach((button) => {
-      button.addEventListener("click", function () {
+      button.addEventListener("click", (e) => {
+        const target = e.currentTarget as HTMLButtonElement;
         filterButtons.forEach((btn) => btn.classList.remove("active"));
-        this.classList.add("active");
+        target.classList.add("active");
 
-        const filterValue = this.getAttribute("data-filter") || "all";
+        const filterValue = target.getAttribute("data-filter") || "all";
         filterProjects(filterValue);
       });
     });

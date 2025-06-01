@@ -2,15 +2,25 @@
 import Link from "next/link";
 import React from "react";
 
-const LinkButtonSecondary = (props) => {
+interface LinkButtonSecondaryProps {
+  path: string;
+  children: React.ReactNode;
+  className?: string;
+}
+
+const LinkButtonSecondary: React.FC<LinkButtonSecondaryProps> = ({
+  path,
+  children,
+  className = "",
+}) => {
   return (
     <Link
-      href={props.path}
-      className="px-6 py-3 bg-dark-800 border border-dark-700 text-white rounded-lg hover:bg-dark-700 transition flex items-center"
+      href={path}
+      className={`px-6 py-3 bg-dark-700 border border-dark-600 text-white rounded-lg hover:bg-dark-600 transition flex items-center ${className}`}
       data-aos="fade-up"
       data-aos-delay="200"
     >
-      {props.text}
+      {children}
     </Link>
   );
 };

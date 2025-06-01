@@ -9,6 +9,7 @@ import GraphicDesignSection from "./components/HomeComponents/GraphicDesignSecti
 import AnimationSection from "./components/HomeComponents/AnimationSection";
 import HeroSection from "./components/HomeComponents/HeroSection";
 import CertificationsSection from "./components/HomeComponents/CertificationsSection";
+import ResumeSection from "./components/HomeComponents/ResumeSection";
 
 // Background Animation Component
 const BackgroundAnimation = () => (
@@ -32,14 +33,17 @@ export default function Home() {
   }, []);
 
   return (
-    <main>
+    <main className="relative min-h-screen">
       <BackgroundAnimation />
-      <HeroSection isLoading={isLoading} />
-      <About isLoading={isLoading} />
-      <CreativeEcosystem />
-      <GraphicDesignSection isLoading={isLoading} />
-      <AnimationSection isLoading={isLoading} />
-      <CertificationsSection />
+      <div className="relative z-10">
+        <HeroSection isLoading={isLoading} />
+        <About isLoading={isLoading} />
+        <CreativeEcosystem />
+        <GraphicDesignSection isLoading={isLoading} />
+        <AnimationSection isLoading={isLoading} />
+        <ResumeSection />
+        <CertificationsSection />
+      </div>
     </main>
   );
 }
