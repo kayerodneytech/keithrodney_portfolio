@@ -1,6 +1,6 @@
 import React from "react";
 
-const Resume = () => {
+const ResumeSection = () => {
   return (
     <>
       <section className="py-20" id="resume">
@@ -161,8 +161,8 @@ const Resume = () => {
                     </p>
                     <ul className="list-disc pl-5 text-gray-400 space-y-1 text-sm">
                       <li>
-                        Character animation for an animated children &apos s
-                        film meant for TV, under tight production deadlines
+                        Character animation for an animated children&apos;s film
+                        meant for TV, under tight production deadlines
                       </li>
                       <li>
                         Following director instructions and scripts to animate
@@ -198,8 +198,8 @@ const Resume = () => {
                       <li>Teaching and leading a team of young people</li>
                       <li>
                         Self-taught many of the technical skills that have
-                        contributed to Rodneytech's success, demonstrating a
-                        high level of commitment and leadership
+                        contributed to Rodneytech&apos;s success, demonstrating
+                        a high level of commitment and leadership
                       </li>
                       <li>
                         Completed projects with clients including the NUST
@@ -221,10 +221,10 @@ const Resume = () => {
                       <i className="fas fa-graduation-cap text-xs text-white"></i>
                     </div>
                     <h5 className="font-semibold mb-1">
-                      A' Level (Physics, Computer Science, Mathematics)
+                      A&apos; Level (Physics, Computer Science, Mathematics)
                     </h5>
                     <p className="text-gray-500 text-sm">
-                      St. Bernard's High School | 2021 - 2022
+                      St. Bernard&apos;s High School | 2021 - 2022
                     </p>
                   </div>
 
@@ -232,7 +232,9 @@ const Resume = () => {
                     <div className="absolute left-0 w-6 h-6 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center">
                       <i className="fas fa-graduation-cap text-xs text-white"></i>
                     </div>
-                    <h5 className="font-semibold mb-1">O' Level – 11 Passed</h5>
+                    <h5 className="font-semibold mb-1">
+                      O&apos; Level – 11 Passed
+                    </h5>
                     <p className="text-gray-500 text-sm">
                       Pumula High School | 2016 - 2020
                     </p>
@@ -274,4 +276,4 @@ const Resume = () => {
   );
 };
 
-export default Resume;
+export default ResumeSection;
