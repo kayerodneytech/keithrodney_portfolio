@@ -10,6 +10,7 @@ import AnimationSection from "./components/HomeComponents/AnimationSection";
 import HeroSection from "./components/HomeComponents/HeroSection";
 import CertificationsSection from "./components/HomeComponents/CertificationsSection";
 import ResumeSection from "./components/HomeComponents/ResumeSection";
+import { Analytics } from "@vercel/analytics/next";
 
 // Background Animation Component
 const BackgroundAnimation = () => (
@@ -36,6 +37,7 @@ export default function Home() {
     <main className="relative min-h-screen">
       <BackgroundAnimation />
       <div className="relative z-10">
+        <Analytics />
         <HeroSection isLoading={isLoading} />
         <About isLoading={isLoading} />
         <CreativeEcosystem />
