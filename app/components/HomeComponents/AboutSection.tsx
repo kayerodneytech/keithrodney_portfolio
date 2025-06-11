@@ -55,48 +55,50 @@ export default function About({ isLoading = false }: AboutProps) {
             >
               <h3 className="text-2xl font-semibold mb-4">Who I Am</h3>
               <p className="text-gray-400 mb-6">
-                I&apos;m Keith Rodney Phiri — a passionate and versatile digital
-                creative. I thrive at the intersection of artistic expression
-                and technical problem-solving, with a skill set that spans 2D
-                animation, graphic design, social media management, brand
-                strategy, and web development.
+                In a nutshell, A versatile digital creative. I thrive at the
+                intersection of creativity and technical problem-solving. My
+                skill set spans 2D animation, graphic design, social media
+                strategy and modern web development.
               </p>
               <p className="text-gray-400 mb-6">
-                My creative journey started with pencil sketching — I&apos;ve
-                been drawing portraits since primary school. As I grew older, I
-                became deeply drawn to visual storytelling, exploring graphic
+                My creative roots began with pencil sketching. I&apos;ve been
+                drawing portraits for as long as I can remember and as I grew
+                older, I became drawn to visual storytelling, exploring graphic
                 design and later animation as a hobby during my late high school
                 years.
                 <br />
                 <br />
-                My skills are largely self-taught, developed through
-                volunteering, hands-on experimentation, and freelancing for
-                local businesses. Over time, I took charge of delivering my own
-                visuals through social media — learning not just to design
-                content, but to strategize its distribution, mastering the
-                nuances of different platforms to ensure my work reached the
-                right audience.
+                My skills are largely self-taught — developed through
+                volunteering, hands-on tinkering, and freelancing. Over time, I
+                took charge of delivering my own visuals through social media —
+                learning not just to design or create content, but to strategize
+                its distribution... mastering the nuances of different
+                platforms, learning and refining copywriting strategies, social
+                tools and gaining the experience and knowledge needed to know
+                how to manage digital presence.
                 <br />
                 <br />
                 Beyond creativity, I have a strong technical foundation. I
                 studied Computer Science from 2016 to 2022, which introduced me
-                to programming and broadened my understanding of systems
-                thinking. This knowledge has been instrumental in shaping how I
-                approach problems across disciplines. I&apos;m also a hobbyist
-                web developer — having created sites for businesses like Ethnik
-                Kollections in Bulawayo, as well as my own personal projects. My
-                design background plays a big role here too, as I apply an
-                understanding of visual hierarchy, user behavior, and aesthetics
-                to every web experience I build.
+                to coding and programming. This knowledge has been instrumental
+                in shaping how I approach problems across disciplines,
+                approaching problems with a more grounded, process based
+                approach.
+                <br />
+                Today I&apos;m also a hobbyist web developer — having created
+                sites for businesses like Ethnik Kollections in Bulawayo, as
+                well as my own personal projects. My design background plays a
+                big role here too, as I apply an understanding of visual
+                hierarchy, user behavior, and aesthetics to every web experience
+                I build.
               </p>
               <p className="text-gray-400">
-                As I&apos;ve mentioned before, my versatility is my greatest
-                strength. I always strive to create synergy between the
-                different creative and technical fields I work in — from
-                building intuitive, user-focused, and SEO-optimized websites, to
-                crafting engaging animated content for marketing, and
-                implementing the strategies needed for real brand growth and
-                user retention.
+                My versatility is my greatest strength and I create a seamless
+                synergy between the different creative and technical aspects of
+                my work — from building modern, user-focused, and SEO-optimized
+                websites, to crafting engaging animated content, to creating and
+                implementing the strategies needed for real brand growth and a
+                strong Digital presence.
               </p>
             </div>
 
