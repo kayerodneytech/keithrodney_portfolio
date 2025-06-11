@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import { FaPaintBrush, FaCode, FaTrophy, FaUsers } from "react-icons/fa";
@@ -61,10 +59,8 @@ function HeroSection({ isLoading = false }: HeroProps) {
               data-aos="fade-up"
               data-aos-delay="400"
             >
-              Versatile digital professional specializing in animation, social
-              media strategy and Branding. I Bridge creativity and technical
-              expertise to deliver a modern, multifaceted approach to brand
-              growth.
+              Imagine if you combined a Digital Artist and a Social Media
+              Strategist...then gave them the ability to code.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -98,8 +94,8 @@ function HeroSection({ isLoading = false }: HeroProps) {
             >
               <div className="w-xl h-2xl bg-gradient-to-br from-[#1245f8] to-[#2f2bfe] rounded-full p-1">
                 <Image
-                  src="/images/profile2.jpg"
-                  alt="Keith Phiri"
+                  src="/images/profile3.jpg"
+                  alt="Keith Rodney Portraits"
                   width={500}
                   height={500}
                   className="w-full h-auto rounded-full object-cover"
@@ -119,9 +115,9 @@ function HeroSection({ isLoading = false }: HeroProps) {
                 </div>
                 <div className="ml-3">
                   <p className="text-sm font-medium text-gray-400">
-                    Achievements
+                    Favourite Role
                   </p>
-                  <p className="text-white font-semibold">Consistent Results</p>
+                  <p className="text-white font-semibold text-sm">Animator</p>
                 </div>
               </div>
             </div>
