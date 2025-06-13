@@ -138,11 +138,11 @@ const processSteps = [
 const GraphicDesignPortfolio = () => {
   const [activeTestimonial, setActiveTestimonial] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
-  const autoScrollRef = useRef<NodeJS.Timeout>();
+  const autoScrollRef = useRef<NodeJS.Timeout | undefined>(undefined);
 
   const nextTestimonial = useCallback(() => {
     setActiveTestimonial((current) => (current + 1) % testimonials.length);
-  }, []);
+  }, [testimonials.length]);
 
   const prevTestimonial = useCallback(() => {
     setActiveTestimonial((current) =>

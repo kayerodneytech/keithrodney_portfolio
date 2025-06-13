@@ -1,5 +1,5 @@
 import React from "react";
-import { FaCode, FaExternalLinkAlt } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const TechnicalSection = () => {
   return (
