@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
-import { MotionHighlight } from "@/components/animate-ui/effects/motion-highlight";
 
 const CreativeEcosystem = () => {
   const ref = useRef(null);
@@ -227,7 +226,7 @@ const CreativeEcosystem = () => {
         </div>
 
         {/* Description Cards */}
-        <MotionHighlight hover>
+        <div>
           <motion.div
             className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-16 max-w-4xl mx-auto"
             initial="hidden"
@@ -246,7 +245,7 @@ const CreativeEcosystem = () => {
               </div>
             ))}
           </motion.div>
-        </MotionHighlight>
+        </div>
       </div>
     </section>
   );

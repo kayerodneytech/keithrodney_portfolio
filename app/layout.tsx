@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import ClientLayout from "./components/client-layout";
+import { StarsBackground } from "@/components/animate-ui/backgrounds/stars";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -76,6 +77,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} bg-dark-900 text-gray-200 antialiased`}
       >
+        <StarsBackground className="absolute inset-0 flex items-center justify-center rounded-xl" />
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>

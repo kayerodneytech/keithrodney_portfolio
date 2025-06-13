@@ -10,15 +10,8 @@ import AnimationSection from "./components/HomeComponents/AnimationSection";
 import HeroSection from "./components/HomeComponents/HeroSection";
 import CertificationsSection from "./components/HomeComponents/CertificationsSection";
 import ResumeSection from "./components/HomeComponents/ResumeSection";
-
-// Background Animation Component
-const BackgroundAnimation = () => (
-  <div className="fixed inset-0 overflow-hidden -z-10">
-    <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-[#1245f8] opacity-5 blur-3xl animate-float"></div>
-    <div className="absolute top-1/3 right-1/4 w-72 h-72 rounded-full bg-[#1245f8] opacity-5 blur-3xl animate-float-reverse"></div>
-    <div className="absolute bottom-1/4 right-1/3 w-56 h-56 rounded-full bg-[#1245f8] opacity-5 blur-3xl animate-float"></div>
-  </div>
-);
+import { StarsBackground } from "@/components/animate-ui/backgrounds/stars";
+import TechnicalSection from "./components/HomeComponents/TechnicalSection";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -34,13 +27,14 @@ export default function Home() {
 
   return (
     <main className="relative min-h-screen">
-      <BackgroundAnimation />
+      <StarsBackground className="absolute inset-0 flex items-center justify-center rounded-xl" />
       <div className="relative z-10">
         <HeroSection isLoading={isLoading} />
         <About isLoading={isLoading} />
         <CreativeEcosystem />
         <GraphicDesignSection isLoading={isLoading} />
         <AnimationSection isLoading={isLoading} />
+        <TechnicalSection />
         <ResumeSection />
         <CertificationsSection />
       </div>

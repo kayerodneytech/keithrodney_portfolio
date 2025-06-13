@@ -2,12 +2,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaPaintBrush, FaCode, FaTrophy, FaUsers } from "react-icons/fa";
 import { Skeleton, SkeletonText, SkeletonAvatar } from "../ui/skeleton";
+import BlurText from "@/components/animate-ui/backgrounds/BlurText";
 
 type HeroProps = {
   isLoading?: boolean;
 };
 
 function HeroSection({ isLoading = false }: HeroProps) {
+  const handleAnimationComplete = () => {
+    console.log("Name animation completed!");
+  };
+
   if (isLoading) {
     return (
       <section className="min-h-screen flex items-center">
@@ -42,15 +47,19 @@ function HeroSection({ isLoading = false }: HeroProps) {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div data-aos="fade-right" data-aos-duration="1000">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
+              <BlurText
+                text="Keith Rodney Phiri"
+                className="text-4xl sm:text-5xl md:text-6xl font-bold text-blue-500"
+                delay={150}
+                animateBy="words"
+                direction="top"
+                onAnimationComplete={handleAnimationComplete}
+              />
               <span
-                className="text-transparent bg-clip-text bg-gradient-to-br from-[#1245f8] to-[#007eff]"
                 data-aos="fade-up"
-                data-aos-delay="200"
+                data-aos-delay="300"
+                className="block mt-2"
               >
-                Keith Rodney Phiri
-              </span>
-              <br />
-              <span data-aos="fade-up" data-aos-delay="300">
                 Digital Creative, Brand Strategist.
               </span>
             </h1>
