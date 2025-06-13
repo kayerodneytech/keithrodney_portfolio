@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
+import { MotionHighlight } from "@/components/animate-ui/effects/motion-highlight";
 
 const CreativeEcosystem = () => {
   const ref = useRef(null);
@@ -226,26 +227,26 @@ const CreativeEcosystem = () => {
         </div>
 
         {/* Description Cards */}
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-16 max-w-4xl mx-auto"
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-          variants={containerVariants}
-        >
-          {nodes.map((node, index) => (
-            <motion.div
-              key={node.id}
-              className="bg-dark-800 rounded-xl p-6 border border-dark-700 hover:border-blue-500 transition-colors"
-              variants={nodeVariants}
-              whileHover={{ y: -5 }}
-            >
-              <h4 className="text-xl font-semibold mb-3 text-white">
-                {index + 1}. {node.title}
-              </h4>
-              <p> {node.description}</p>
-            </motion.div>
-          ))}
-        </motion.div>
+        <MotionHighlight hover>
+          <motion.div
+            className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-16 max-w-4xl mx-auto"
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"}
+            variants={containerVariants}
+          >
+            {nodes.map((node, index) => (
+              <div
+                className="border border-gray-200/50 p-5 rounded-xl hover:bg-blue-600/10 transition-colors duration-300"
+                key={node.id}
+              >
+                <h4 className="text-xl font-semibold mb-3 text-white">
+                  {index + 1}. {node.title}
+                </h4>
+                <p> {node.description}</p>
+              </div>
+            ))}
+          </motion.div>
+        </MotionHighlight>
       </div>
     </section>
   );
